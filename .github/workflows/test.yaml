@@ -9,6 +9,6 @@ jobs:
       - name: sanity_check
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-	  run:
-          #pip install -r requirements.txt
+	run: |
+          pip install -r requirements.txt
           python test.py

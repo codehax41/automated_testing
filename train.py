@@ -4,7 +4,6 @@ import pickle
 import os
 
 X, y = make_regression(10000,n_features = 11)
-
 # Train a model
 reg = Lasso().fit(X, y.ravel())
 # Print out training r2
